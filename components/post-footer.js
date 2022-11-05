@@ -20,7 +20,7 @@ export default function PostFooter({ title, coverImage, date, author }) {
             </span>
           </div>
         </div>
-        <div className="max-w-2xl mx-auto border-none md:border-l pl-10 py-4 hidden">
+        <div className="max-w-2xl mx-auto border-l pl-10 py-4 hidden md:block">
           <div className="text-base font-medium">Posted on:</div>
           <Date dateString={date} />
         </div>
