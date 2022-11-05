@@ -28,7 +28,7 @@ export default function Alert({ preview }) {
               <a
                 href={`https://hackthisfall.tech`}
                 target="_blank"
-                className="underline hover:text-success text-orange duration-200 transition-colors"
+                className="underline  text-orange duration-200 transition-colors"
               >
                 hackthisfall.tech
               </a>

@@ -32,7 +32,7 @@ export default function Post({ post, morePosts, preview }) {
       ) : (
         <>
           <div className="min-w-full bg-light-orange flex justify-center">
-            <article className="max-w-2xl w-4/6 bg-white mt-10 mb-12 rounded-2xl p-10">
+            <article className="max-w-2xl w-11/12 md:w-4/6 bg-white mt-10 mb-12 rounded-2xl p-5 md:p-10">
               <Head>
                 <title>{post.content.title}</title>
                 <meta property="og:image" content={post.content.image} />

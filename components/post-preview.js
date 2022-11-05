@@ -19,8 +19,8 @@ export default function PostPreview({
           <CoverImage slug={`/posts/${slug}`} title={title} url={coverImage} />
         </div>
         <div className="px-5 font-poppins pt-5 pb-7">
-          <h3 className="font-semibold text-lg leading-snug">
-            <span className="text-title">{title}</span>
+          <h3 className="font-semibold text-lg leading-snug text-title">
+            {title}
           </h3>
           <div className="flex flex-row mt-5">
             {categories.map(({ name }) => (

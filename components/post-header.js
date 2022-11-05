@@ -15,7 +15,7 @@ export default function PostHeader({
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      <div className="flex justify-between items-center mt-5">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-5">
         <div className="flex flex-row">
           {categories.map(({ name }) => (
             <div
@@ -26,7 +26,7 @@ export default function PostHeader({
             </div>
           ))}
         </div>
-        <div className="flex flex-row items-center font-poppins text-black-accent font-semibold text-sm">
+        <div className="flex flex-row items-center font-poppins text-black-accent font-semibold text-sm mt-5 md:mt-0">
           <span>Share:</span>
           <Link href="/" className="ml-3">
             <svg
