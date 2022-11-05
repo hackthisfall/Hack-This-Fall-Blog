@@ -25,7 +25,7 @@ export default function PostFooter({ title, coverImage, date, author }) {
           <Date dateString={date} />
         </div>
         <div className="md:hidden w-full">
-          <div className="max-w-full w-full border-none md:border-l py-4 flex flex-row items-center grow justify-start">
+          <div className="max-w-full w-full border-none md:border-l pt-2 pb-4 flex flex-row items-center grow justify-start">
             <div className="text-base font-medium">Posted on:</div>
             <div className="text-lg ">
               <Date dateString={date} />
