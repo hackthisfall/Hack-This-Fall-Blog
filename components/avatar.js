@@ -1,17 +1,14 @@
-import Image from 'next/image'
+import Image from "next/legacy/image";
 
-export default function Avatar({ name, picture }) {
+export default function Avatar({ picture }) {
   return (
-    <div className="flex items-center">
-      <div className="w-12 h-12 relative mr-4">
-        <Image
-          src={picture.filename}
-          layout="fill"
-          className="rounded-full"
-          alt={name}
-        />
-      </div>
-      <div className="text-xl font-bold">{name}</div>
+    <div className="w-24 h-24 relative">
+      <Image
+        src={picture}
+        layout="fill"
+        className="rounded-full"
+        alt="author"
+      />
     </div>
-  )
+  );
 }

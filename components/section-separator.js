@@ -1,3 +1,5 @@
-export default function SectionSeparator() {
-  return <hr className="border-accent-2 mt-28 mb-24" />
+import cn from "classnames";
+
+export default function SectionSeparator({ classes }) {
+  return <hr className={cn("border-accent-2", classes)} />;
 }

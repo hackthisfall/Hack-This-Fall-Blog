@@ -1,7 +1,7 @@
-import Avatar from './avatar'
-import Date from './date'
-import CoverImage from './cover-image'
-import Link from 'next/link'
+import Avatar from "./avatar";
+import Date from "./date";
+import CoverImage from "./cover-image";
+import Link from "next/link";
 
 export default function PostPreview({
   title,
@@ -10,22 +10,30 @@ export default function PostPreview({
   excerpt,
   author,
   slug,
+  categories,
 }) {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} url={coverImage} />
+    <Link href={`/posts/${slug}`}>
+      <div className="border rounded-xl overflow-hidden bg-white hover:bg-light-orange duration-300 ease-out cursor-pointer">
+        <div>
+          <CoverImage slug={`/posts/${slug}`} title={title} url={coverImage} />
+        </div>
+        <div className="px-5 font-poppins pt-5 pb-7">
+          <h3 className="font-semibold text-lg leading-snug">
+            <span className="text-title">{title}</span>
+          </h3>
+          <div className="flex flex-row mt-5">
+            {categories.map(({ name }) => (
+              <div
+                key={name}
+                className="uppercase font-poppins font-semibold text-white text-sm bg-category rounded px-2 py-1 ml-3 first:ml-0"
+              >
+                {name}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-        <Link href={`/posts/${slug}`} className="hover:underline">
-          {title}
-        </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <Date dateString={date} />
-      </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.content.picture} />
-    </div>
-  )
+    </Link>
+  );
 }

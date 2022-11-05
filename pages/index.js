@@ -1,23 +1,27 @@
-import Container from '@/components/container'
-import MoreStories from '@/components/more-stories'
-import HeroPost from '@/components/hero-post'
-import Intro from '@/components/intro'
-import Layout from '@/components/layout'
-import { getAllPostsForHome } from '@/lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '@/lib/constants'
+import Container from "@/components/container";
+import MoreStories from "@/components/more-stories";
+import HeroPost from "@/components/hero-post";
+import Header from "@/components/header";
+import Layout from "@/components/layout";
+import { getAllPostsForHome } from "@/lib/api";
+import Head from "next/head";
+import { CMS_NAME } from "@/lib/constants";
+import SectionSeparator from "@/components/section-separator";
 
 export default function Index({ allPosts, preview }) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  const heroPost = allPosts[0];
+  const morePosts = allPosts.slice(1);
   return (
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Hack This Fall Blog</title>
         </Head>
         <Container>
-          <Intro />
+          <Header />
+        </Container>
+        <SectionSeparator classes="mt-5 mb-10" />
+        <Container>
           {heroPost && (
             <HeroPost
               title={heroPost.content.title}
@@ -26,18 +30,20 @@ export default function Index({ allPosts, preview }) {
               author={heroPost.content.author}
               slug={heroPost.slug}
               excerpt={heroPost.content.intro}
+              categories={heroPost.content.categories}
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
     </>
-  )
+  );
 }
 
 export async function getStaticProps({ preview = null }) {
-  const allPosts = (await getAllPostsForHome(preview)) || []
+  const allPosts = (await getAllPostsForHome(preview)) || [];
+
   return {
     props: { allPosts, preview },
-  }
+  };
 }
