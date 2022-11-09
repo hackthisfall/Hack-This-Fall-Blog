@@ -1,10 +1,8 @@
 import Avatar from "./avatar";
 import Date from "./date";
-import CoverImage from "./cover-image";
-import PostTitle from "./post-title";
 import SectionSeparator from "./section-separator";
 
-export default function PostFooter({ title, coverImage, date, author }) {
+export default function PostFooter({ date, author }) {
   return (
     <>
       <div className="flex flex-col-reverse md:flex-row border items-start md:items-center px-5 py-3 md:py-5 md:px-10 rounded-xl font-poppins text-black-accent">
