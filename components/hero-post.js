@@ -14,13 +14,13 @@ export default function HeroPost({
 }) {
   return (
     <section>
-      <Link href={`/posts/${slug}`} className="text-title">
+      <Link href={`/${slug}`} className="text-title">
         <div className="md:flex md:flex-row items-center border rounded-xl md:rounded-2xl overflow-hidden bg-white hover:bg-light-orange duration-300 ease-out ">
           <div className="max-h-max basis-1/2">
             <CoverImage
               title={title}
               url={coverImage}
-              slug={`/posts/${slug}`}
+              slug={`/${slug}`}
               isHeroPost={true}
             />
           </div>

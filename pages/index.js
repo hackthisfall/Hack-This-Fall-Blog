@@ -15,7 +15,7 @@ export default function Index({ allPosts, preview }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Hack This Fall Blog</title>
+          <title>Blog | Hack This Fall</title>
         </Head>
         <Container>
           <Header />

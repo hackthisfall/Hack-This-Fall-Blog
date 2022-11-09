@@ -13,10 +13,10 @@ export default function PostPreview({
   categories,
 }) {
   return (
-    <Link href={`/posts/${slug}`}>
+    <Link href={`/${slug}`}>
       <div className="border rounded-xl overflow-hidden bg-white hover:bg-light-orange duration-300 ease-out cursor-pointer">
         <div>
-          <CoverImage slug={`/posts/${slug}`} title={title} url={coverImage} />
+          <CoverImage slug={`/${slug}`} title={title} url={coverImage} />
         </div>
         <div className="px-5 font-poppins pt-5 pb-7">
           <h3 className="font-semibold text-lg leading-snug text-title">
