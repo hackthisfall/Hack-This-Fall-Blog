@@ -25,7 +25,7 @@ export default function Footer() {
               <h4 className="font-semibold text-xl">About</h4>
               <Link
                 className="font-normal text-lg mt-3 text-black hover:text-dark-orange duration-300 ease-out"
-                href="/"
+                href="https://hackthisfall.tech/"
               >
                 Hackathon
               </Link>

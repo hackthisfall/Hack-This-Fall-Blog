@@ -13,7 +13,7 @@ export default function PostFooter({ date, author }) {
           <div className="flex flex-col ml-3 font-medium">
             <span className="text-sm">Author:</span>
             <span className="text-lg md:text-xl">{author.name}</span>
-            <span className="text-sm uppercase">
+            <span className="text-sm ">
               {author.content.designation}, {author.content.company}{" "}
             </span>
           </div>
