@@ -5,13 +5,7 @@ import PostTitle from "../components/post-title";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function PostHeader({
-  title,
-  coverImage,
-  date,
-  author,
-  categories,
-}) {
+export default function PostHeader({ title, categories }) {
   return (
     <>
       <PostTitle>{title}</PostTitle>

@@ -39,15 +39,12 @@ export default function Post({ post, morePosts, preview }) {
               </Head>
               <PostHeader
                 title={post.content.title}
-                coverImage={post.content.image}
-                date={post.first_published_at || post.published_at}
-                author={post.content.author}
                 categories={post.content.categories}
               />
               <SectionSeparator classes={"mt-5"} />
               <PostBody content={post.html} />
               <PostFooter
-                date={post.first_published_at || post.published_at}
+                date={post.content.date || post.published_at}
                 author={post.content.author}
               />
             </article>
@@ -73,6 +70,7 @@ export async function getStaticProps({ params, preview = null }) {
       },
       morePosts: data.morePosts,
     },
+    revalidate: 30,
   };
 }
 
