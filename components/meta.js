@@ -1,5 +1,4 @@
 import Head from "next/head";
-import < meta CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 
 export default function Meta() {
   return (
@@ -33,10 +32,11 @@ export default function Meta() {
       <meta name="theme-color" content="#000" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@hackthisfall" />
-      <meta name="twitter:image" content="https://hackthisfall.tech/og-image.png" />
+      <meta
+        name="twitter:image"
+        content="https://hackthisfall.tech/og-image.png"
+      />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      {/* <meta name="description" content=<meta`Hack This Fall Blog Page`} /> */}
-      {/* <meta property="og:image" content=<metaHOME_OG_IMAGE_URL} /> */}
     </Head>
   );
 }

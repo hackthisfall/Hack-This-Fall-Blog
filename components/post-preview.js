@@ -14,7 +14,7 @@ export default function PostPreview({
 }) {
   return (
     <Link href={`/${slug}`}>
-      <div className="border rounded-xl overflow-hidden bg-white hover:bg-light-orange duration-300 ease-out cursor-pointer">
+      <div className="border rounded-xl overflow-hidden bg-white duration-300 ease-out cursor-pointer">
         <div>
           <CoverImage slug={`/${slug}`} title={title} url={coverImage} />
         </div>
