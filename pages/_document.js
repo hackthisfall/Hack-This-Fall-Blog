@@ -14,6 +14,8 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Hack This Fall Blog Page" />
       </Head>
       <body>
         <Main />

@@ -16,6 +16,14 @@ export default function Index({ allPosts, preview }) {
       <Layout preview={preview}>
         <Head>
           <title>Blog | Hack This Fall</title>
+          <meta property="og:title" content="Hack This Fall Blog Page" />
+          <meta property="og:url" content="https://blog.hackthisfall.tech" />
+          <meta
+            property="og:image"
+            content="https://blog.hackthisfall.tech/og-image.png"
+          />
+          <meta property="og:description" content="Hack This Fall Blog Page" />
+          <meta name="twitter:title" content="Hack This Fall Blog Page" />
         </Head>
         <Container>
           <Header />

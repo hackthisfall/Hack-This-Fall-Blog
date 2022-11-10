@@ -36,6 +36,12 @@ export default function Post({ post, morePosts, preview }) {
               <Head>
                 <title>{post.content.title}</title>
                 <meta property="og:image" content={post.content.image} />
+                <meta
+                  property="og:url"
+                  content={`https://blog.hackthisfall.tech/${post.slug}`}
+                />
+                <meta property="og:description" content={post.content.intro} />
+                <meta name="twitter:title" content={post.content.title} />
               </Head>
               <PostHeader
                 title={post.content.title}
