@@ -19,12 +19,12 @@ export default function PostFooter({ date, author }) {
           </div>
         </div>
         <div className="max-w-2xl mx-auto border-l pl-10 py-4 hidden md:block">
-          <div className="text-base font-medium">Posted on:</div>
+          <div className="text-base font-medium">Posted on :</div>
           <Date dateString={date} />
         </div>
         <div className="md:hidden w-full">
-          <div className="max-w-full w-full border-none md:border-l pt-2 pb-4 flex flex-row items-center grow justify-start">
-            <div className="text-base font-medium">Posted on:</div>
+          <div className="max-w-full w-full border-none md:border-l pt-2 pb-4 flex flex-row items-center grow justify-start ">
+            <div className="text-base font-medium mr-1">Posted on :</div>
             <div className="text-lg ">
               <Date dateString={date} />
             </div>

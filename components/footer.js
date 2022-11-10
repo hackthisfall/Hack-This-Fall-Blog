@@ -128,7 +128,7 @@ export default function Footer() {
                 </Link>
                 <Link
                   target={"_blank"}
-                  href="mailto:contact@hackthisfall.tech"
+                  href="mailto:hackthisfall@gmail.com"
                   className="bg-black hover:bg-dark-orange duration-300 ease-out rounded-full basis-0 w-11 h-11 flex justify-center"
                 >
                   <Image

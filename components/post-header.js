@@ -4,10 +4,12 @@ import CoverImage from "../components/cover-image";
 import PostTitle from "../components/post-title";
 import Image from "next/image";
 import Link from "next/link";
+import { useSnackbar } from "notistack";
 import { useRouter } from "next/router";
 
 export default function PostHeader({ title, categories }) {
   const router = useRouter();
+  const { enqueueSnackbar } = useSnackbar();
 
   const origin =
     typeof window !== "undefined" && window.location.origin
@@ -20,6 +22,9 @@ export default function PostHeader({ title, categories }) {
     } else {
       document.execCommand("copy", true, text);
     }
+    enqueueSnackbar("Link copied to clipboard", {
+      autoHideDuration: 1500,
+    });
   };
 
   return (
