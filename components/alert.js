@@ -27,7 +27,7 @@ export default function Alert({ preview }) {
               Pre-Registrations have begun! Visit{" "}
               <a
                 href={`https://hackthisfall.tech`}
-                target="_blank"
+                target={"_blank"}
                 className="underline  text-orange duration-200 transition-colors"
               >
                 hackthisfall.tech

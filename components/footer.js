@@ -26,18 +26,21 @@ export default function Footer() {
               <Link
                 className="font-normal text-lg mt-3 text-black hover:text-dark-orange duration-300 ease-out"
                 href="https://hackthisfall.tech/"
+                target={"_blank"}
               >
                 Hackathon
               </Link>
               <Link
                 className="font-normal text-lg mt-2 text-black hover:text-dark-orange duration-300 ease-out"
-                href="/"
+                href="https://hackthisfall.tech/events"
+                target={"_blank"}
               >
                 Events
               </Link>
               <Link
                 className="font-normal text-lg mt-2 text-black hover:text-dark-orange duration-300 ease-out"
-                href="/"
+                href="https://hackthisfall.tech/team"
+                target={"_blank"}
               >
                 Team
               </Link>
@@ -47,19 +50,22 @@ export default function Footer() {
               <h4 className="font-semibold text-xl">Explore</h4>
               <Link
                 className="font-normal text-lg mt-3 text-black hover:text-dark-orange duration-300 ease-out"
-                href="/"
+                href="https://dev.to/hackthisfall"
+                target={"_blank"}
               >
                 Dev.to
               </Link>
               <Link
                 className="font-normal text-lg mt-2 text-black hover:text-dark-orange duration-300 ease-out"
-                href="/"
+                href="https://hackthisfall.tech/swag"
+                target={"_blank"}
               >
                 Swags
               </Link>
               <Link
                 className="font-normal text-lg mt-2 text-black hover:text-dark-orange duration-300 ease-out"
-                href="/"
+                href="https://discord.hackthisfall.tech/"
+                target={"_blank"}
               >
                 Community
               </Link>
@@ -69,7 +75,8 @@ export default function Footer() {
               <h4 className="font-semibold text-xl">Find us online</h4>
               <div className="grid grid-cols-3 gap-x-4 gap-y-2 mt-3">
                 <Link
-                  href="/"
+                  target={"_blank"}
+                  href="https://twitter.com/hackthisfall/"
                   className="bg-black hover:bg-dark-orange duration-300 ease-out rounded-full basis-0 w-11 h-11 flex justify-center"
                 >
                   <Image
@@ -81,7 +88,8 @@ export default function Footer() {
                   ></Image>
                 </Link>
                 <Link
-                  href="/"
+                  target={"_blank"}
+                  href="https://discord.hackthisfall.tech/"
                   className="bg-black hover:bg-dark-orange duration-300 ease-out rounded-full basis-0 w-11 h-11 flex justify-center"
                 >
                   <Image
@@ -93,7 +101,8 @@ export default function Footer() {
                   ></Image>
                 </Link>
                 <Link
-                  href="/"
+                  target={"_blank"}
+                  href="https://instagram.com/hackthisfall"
                   className="bg-black hover:bg-dark-orange duration-300 ease-out rounded-full basis-0 w-11 h-11 flex justify-center"
                 >
                   <Image
@@ -105,7 +114,8 @@ export default function Footer() {
                   ></Image>
                 </Link>
                 <Link
-                  href="/"
+                  target={"_blank"}
+                  href="https://www.youtube.com/channel/UCpdsmUIkLpfopjURSYF1gaA"
                   className="bg-black hover:bg-dark-orange duration-300 ease-out rounded-full basis-0 w-11 h-11 flex justify-center"
                 >
                   <Image
@@ -117,7 +127,8 @@ export default function Footer() {
                   ></Image>
                 </Link>
                 <Link
-                  href="/"
+                  target={"_blank"}
+                  href="mailto:contact@hackthisfall.tech"
                   className="bg-black hover:bg-dark-orange duration-300 ease-out rounded-full basis-0 w-11 h-11 flex justify-center"
                 >
                   <Image
@@ -129,7 +140,8 @@ export default function Footer() {
                   ></Image>
                 </Link>
                 <Link
-                  href="/"
+                  target={"_blank"}
+                  href="https://www.linkedin.com/company/hackthisfall/"
                   className="bg-black hover:bg-dark-orange duration-300 ease-out rounded-full basis-0 w-11 h-11 flex justify-center"
                 >
                   <Image

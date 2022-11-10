@@ -4,8 +4,24 @@ import CoverImage from "../components/cover-image";
 import PostTitle from "../components/post-title";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function PostHeader({ title, categories }) {
+  const router = useRouter();
+
+  const origin =
+    typeof window !== "undefined" && window.location.origin
+      ? window.location.origin
+      : "";
+
+  const copyText = async (text) => {
+    if ("clipboard" in navigator) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      document.execCommand("copy", true, text);
+    }
+  };
+
   return (
     <>
       <PostTitle>{title}</PostTitle>
@@ -22,7 +38,11 @@ export default function PostHeader({ title, categories }) {
         </div>
         <div className="flex flex-row items-center font-poppins text-black-accent font-semibold text-sm mt-5 md:mt-0">
           <span>Share:</span>
-          <Link href="/" className="ml-3">
+          <Link
+            href={`https://twitter.com/intent/tweet?text=${origin}${router.asPath}`}
+            target={"_blank"}
+            className="ml-3"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22.877"
@@ -44,7 +64,11 @@ export default function PostHeader({ title, categories }) {
               </g>
             </svg>
           </Link>
-          <Link href="/" className="ml-4">
+          <Link
+            href={`https://www.linkedin.com/shareArticle?mini=true&url=${origin}${router.asPath}`}
+            target={"_blank"}
+            className="ml-4"
+          >
             <svg
               id="Icon_awesome-linkedin"
               data-name="Icon awesome-linkedin"
@@ -62,7 +86,10 @@ export default function PostHeader({ title, categories }) {
               />
             </svg>
           </Link>
-          <Link href="/" className="ml-4">
+          <button
+            className="ml-4"
+            onClick={() => copyText(`${origin}${router.asPath}`)}
+          >
             <svg
               id="Icon_metro-link"
               data-name="Icon metro-link"
@@ -79,7 +106,7 @@ export default function PostHeader({ title, categories }) {
                 transform="translate(-2.936 -2.29)"
               />
             </svg>
-          </Link>
+          </button>
         </div>
       </div>
     </>
