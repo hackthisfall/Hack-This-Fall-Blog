@@ -35,6 +35,7 @@ export default function Post({ post, morePosts, preview }) {
             <article className="max-w-2xl w-11/12 md:w-4/6 bg-white mt-10 mb-12 rounded-2xl p-5 md:p-10">
               <Head>
                 <title>{post.content.title}</title>
+                <meta property="og:site_name" content="Blog | Hack This Fall" />
                 <meta property="og:image" content={post.content.image} />
                 <meta
                   property="og:url"

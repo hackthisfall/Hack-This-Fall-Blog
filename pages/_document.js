@@ -15,7 +15,6 @@ export default function Document() {
           rel="stylesheet"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Blog | Hack This Fall" />
       </Head>
       <body>
         <Main />
