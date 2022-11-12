@@ -19,7 +19,7 @@ export default function PostFooter({ date, author }) {
               {author.content.designation}, {author.content.company}{" "}
             </span>
             {author.content.twitter && (
-              <Link href={author.content.twitter}>
+              <Link href={author.content.twitter.url}>
                 <Image
                   src="/socials/author-twitter.svg"
                   width={22}
