@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import Avatar from "./avatar";
 import Date from "./date";
 import SectionSeparator from "./section-separator";
@@ -16,6 +18,17 @@ export default function PostFooter({ date, author }) {
             <span className="text-sm ">
               {author.content.designation}, {author.content.company}{" "}
             </span>
+            {author.content.twitter && (
+              <Link href={author.content.twitter}>
+                <Image
+                  src="/socials/author-twitter.svg"
+                  width={22}
+                  height={22}
+                  alt="Hack This Fall Logo"
+                  className="mt-1"
+                ></Image>
+              </Link>
+            )}
           </div>
         </div>
         <div className="max-w-2xl mx-auto border-l pl-10 py-4 hidden md:block">

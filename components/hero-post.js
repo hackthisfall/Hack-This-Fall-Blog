@@ -15,7 +15,7 @@ export default function HeroPost({
   return (
     <section>
       <Link href={`/${slug}`} className="text-title">
-        <div className="md:flex md:flex-row items-center border rounded-xl md:rounded-2xl overflow-hidden bg-white duration-300 ease-out ">
+        <div className="md:flex md:flex-row items-center border rounded-xl md:rounded-2xl overflow-hidden bg-white duration-300 ease-out hover:shadow-md">
           <div className="max-h-max basis-1/2">
             <CoverImage
               title={title}
