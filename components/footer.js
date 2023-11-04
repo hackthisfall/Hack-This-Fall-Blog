@@ -32,10 +32,10 @@ export default function Footer() {
               </Link>
               <Link
                 className="font-normal text-lg mt-2 text-black hover:text-dark-orange duration-300 ease-out"
-                href="https://hackthisfall.tech/events"
+                href="https://bit.ly/htf3-sponsor"
                 target={"_blank"}
               >
-                Events
+                Sponsor Us
               </Link>
               <Link
                 className="font-normal text-lg mt-2 text-black hover:text-dark-orange duration-300 ease-out"
