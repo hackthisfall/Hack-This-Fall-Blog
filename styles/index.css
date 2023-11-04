@@ -5,3 +5,18 @@
 .grayscale {
   filter: grayscale(1);
 }
+
+img[title="grid-image"] {
+  width: calc(50% - 0.25rem);
+  display: inline;
+  margin-top: 0.5rem;
+}
+
+img[title="grid-image"]:nth-of-type(1),
+img[title="grid-image"]:nth-of-type(2) {
+  margin-top: 0rem !important;
+}
+
+img[title="grid-image"]:nth-child(odd) {
+  margin-right: 0.5rem;
+}
