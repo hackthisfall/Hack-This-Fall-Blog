@@ -11,8 +11,8 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from "@/lib/api";
 import PostTitle from "@/components/post-title";
 import Head from "next/head";
 import { CMS_NAME } from "@/lib/constants";
-import RichTextResolver from "storyblok-js-client/dist/richTextResolver";
 import PostFooter from "@/components/post-footer";
+import RichTextResolver from 'storyblok-js-client/richTextResolver'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
