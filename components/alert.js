@@ -24,7 +24,7 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              Pre-Registrations have begun! Visit{" "}
+              Visit{" "}
               <a
                 href={`https://hackthisfall.tech`}
                 target={"_blank"}
@@ -32,6 +32,8 @@ export default function Alert({ preview }) {
               >
                 hackthisfall.tech
               </a>
+              {" "}
+              for more information
             </>
           )}
         </div>
